@@ -19,7 +19,7 @@ async function adminFetch(query) {
 export default async function handler(req, res) {
   // Allow embedding in Shopify Admin
   res.setHeader('Content-Security-Policy',
-    "frame-ancestors https://houseofvaulte.myshopify.com https://admin.shopify.com;"
+    "frame-ancestors https://masculinolatino.com https://admin.shopify.com;"
   );
   res.setHeader('X-Frame-Options', 'ALLOWALL');
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -90,7 +90,7 @@ export default async function handler(req, res) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waitlist Dashboard — House of Vaulte</title>
+  <title>Waitlist Dashboard — Masculino Latino</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -263,7 +263,7 @@ export default async function handler(req, res) {
   <div class="topbar__left">
     <div>
       <div class="topbar__title">Waitlist Dashboard</div>
-      <div class="topbar__sub">House of Vaulte · ${entries.length} entr${entries.length === 1 ? 'y' : 'ies'}</div>
+      <div class="topbar__sub">Masculino Latino · ${entries.length} entr${entries.length === 1 ? 'y' : 'ies'}</div>
     </div>
   </div>
   <div class="topbar__actions">
