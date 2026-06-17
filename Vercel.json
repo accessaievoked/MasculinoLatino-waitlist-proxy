@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "functions": {
+    "api/waitlist.js": { "maxDuration": 10 },
+    "api/dashboard.js": { "maxDuration": 10 }
+  },
+  "headers": [
+    {
+      "source": "/api/waitlist",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "https://masculinolatino.com" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}
