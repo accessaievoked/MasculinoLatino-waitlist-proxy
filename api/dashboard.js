@@ -1,4 +1,4 @@
-const SHOP = 'masculinolatino';
+const SHOP        = '38ea29';
 const API_VERSION = '2024-01';
 
 async function adminFetch(query) {
