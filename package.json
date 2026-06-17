@@ -1,7 +1,7 @@
 {
-  "name": "hov-waitlist-proxy",
+  "name": "MasculinoLatino-waitlist-proxy",
   "version": "1.0.0",
-  "description": "Waitlist proxy for House of Vaulte",
+  "description": "Waitlist proxy for Masculino Latino",
   "private": true,
   "engines": {
     "node": "20.x"
