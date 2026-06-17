@@ -1,8 +1,9 @@
 {
-  "name": "MasculinoLatino-waitlist-proxy",
+  "name": "masculinolatino-waitlist-proxy",
   "version": "1.0.0",
-  "description": "Waitlist proxy for Masculino Latino",
+  "description": "Waitlist proxy for MasculinoLatino",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "20.x"
   }
