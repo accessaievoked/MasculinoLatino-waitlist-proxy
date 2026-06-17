@@ -1,8 +1,8 @@
-const SHOP = 'masculinolatino';
+const SHOP        = '38ea29';
 const API_VERSION = '2024-01';
 
 function setCors(res) {
-  res.setHeader('Access-Control-Allow-Origin', 'https://masculinolatino.com');
+  res.setHeader('Access-Control-Allow-Origin',  '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 }
@@ -75,7 +75,6 @@ async function handlePost(req, res) {
 
 // ── GET — fetch all waitlist entries ─────────────────────────────────────────
 async function handleGet(req, res) {
-  // Simple PIN check
   const pin = req.query.pin;
   if (pin !== process.env.DASHBOARD_PIN) {
     return res.status(401).json({ ok: false, error: 'Unauthorized' });
@@ -104,7 +103,6 @@ async function handleGet(req, res) {
     return obj;
   });
 
-  // Sort newest first
   entries.sort((a, b) => new Date(b.submitted_at || 0) - new Date(a.submitted_at || 0));
 
   return res.status(200).json({ ok: true, entries });
